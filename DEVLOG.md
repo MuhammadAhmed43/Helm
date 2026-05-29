@@ -33,3 +33,4 @@
 - [0031] chore: explore status pill copy
 - [0032] docs: prototype error empty state
 - [0033] chore: track installer icon dimensions
+- [0034] docs: record squirrel hook ordering
