@@ -229,3 +229,4 @@
 - [0227] style: reorder css properties
 - [0228] docs: add usage note
 - [0229] chore: log layout exploration
+- [0230] docs: capture a11y consideration
