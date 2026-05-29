@@ -333,3 +333,4 @@
 - [0331] chore: validate forge maker output
 - [0332] style: simplify shadow stack
 - [0333] docs: jot multi-monitor caveat
+- [0334] chore: log windows symlink workaround
