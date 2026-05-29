@@ -248,3 +248,4 @@
 - [0246] style: align icon stroke widths
 - [0247] docs: trace mouse-down ipc path
 - [0248] chore: prune dead todo
+- [0249] docs: cross-link build instructions
