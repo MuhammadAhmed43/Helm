@@ -190,3 +190,4 @@
 - [0188] chore: confirm mirror toggle default
 - [0189] style: refine focus ring color
 - [0190] docs: snapshot keyboard accessibility plan
+- [0191] chore: note rsvp dwell timing
