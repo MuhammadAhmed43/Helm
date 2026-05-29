@@ -103,3 +103,4 @@
 - [0101] docs: cross-link build instructions
 - [0102] chore: standardize file header
 - [0103] style: rename utility class
+- [0104] docs: clarify settings schema
