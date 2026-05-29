@@ -428,3 +428,4 @@
 - [0426] chore: note retina display tuning
 - [0427] docs: snapshot prefers-reduced-motion
 - [0428] chore: capture electron version bump
+- [0429] style: tweak hairline border weight
