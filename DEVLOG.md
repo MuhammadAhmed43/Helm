@@ -110,3 +110,4 @@
 - [0108] docs: record squirrel hook ordering
 - [0109] chore: validate forge maker output
 - [0110] style: simplify shadow stack
+- [0111] docs: jot multi-monitor caveat
