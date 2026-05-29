@@ -298,3 +298,4 @@
 - [0296] docs: append developer handoff note
 - [0297] chore: tweak indentation
 - [0298] style: align comment spacing
+- [0299] docs: clarify config option
