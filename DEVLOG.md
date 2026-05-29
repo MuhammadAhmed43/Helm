@@ -166,3 +166,4 @@
 - [0164] chore: track lint warning fix
 - [0165] docs: refine hover-free wording
 - [0166] chore: revisit sidebar dimension
+- [0167] style: smooth animation easing curve
