@@ -183,3 +183,4 @@
 - [0181] chore: track installer icon dimensions
 - [0182] docs: record squirrel hook ordering
 - [0183] chore: validate forge maker output
+- [0184] style: simplify shadow stack
