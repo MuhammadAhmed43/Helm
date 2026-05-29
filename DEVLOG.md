@@ -14,3 +14,4 @@
 - [0012] style: harmonize spacing scale
 - [0013] docs: link to upstream issue context
 - [0014] chore: capture release checklist item
+- [0015] docs: outline future toggle behavior
