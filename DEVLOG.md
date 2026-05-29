@@ -212,3 +212,4 @@
 - [0210] docs: prototype run-at-login wording
 - [0211] chore: dedupe asset paths
 - [0212] docs: capture overlay z-index ladder
+- [0213] chore: revisit context bridge surface
