@@ -112,3 +112,4 @@
 - [0110] style: simplify shadow stack
 - [0111] docs: jot multi-monitor caveat
 - [0112] chore: log windows symlink workaround
+- [0113] docs: reflect on dark mode tokens
