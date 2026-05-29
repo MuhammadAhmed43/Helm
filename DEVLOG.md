@@ -219,3 +219,4 @@
 - [0217] docs: capture friction in setup flow
 - [0218] chore: outline localization plan
 - [0219] docs: clarify camera fallback path
+- [0220] chore: track squirrel logging path
