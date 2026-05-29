@@ -343,3 +343,4 @@
 - [0341] docs: append testing protocol
 - [0342] chore: revisit serenade-driver imports
 - [0343] docs: outline future scroll modes
+- [0344] chore: tag potential perf hotspot
