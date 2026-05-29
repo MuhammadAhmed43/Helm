@@ -363,3 +363,4 @@
 - [0361] chore: revisit context bridge surface
 - [0362] style: align color-mix usage
 - [0363] docs: log keyboard repeat rate consideration
+- [0364] chore: jot down ipc rate idea
