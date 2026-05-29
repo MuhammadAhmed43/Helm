@@ -240,3 +240,4 @@
 - [0238] chore: track lint warning fix
 - [0239] docs: refine hover-free wording
 - [0240] chore: revisit sidebar dimension
+- [0241] style: smooth animation easing curve
