@@ -168,3 +168,4 @@
 - [0166] chore: revisit sidebar dimension
 - [0167] style: smooth animation easing curve
 - [0168] docs: enumerate click mode states
+- [0169] chore: review camera permission flow
