@@ -232,3 +232,4 @@
 - [0230] docs: capture a11y consideration
 - [0231] chore: jot down dwell timing idea
 - [0232] docs: note observed tracking edge case
+- [0233] chore: record glass blur experiment
