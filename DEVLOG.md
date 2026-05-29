@@ -304,3 +304,4 @@
 - [0302] docs: add usage note
 - [0303] chore: log layout exploration
 - [0304] docs: capture a11y consideration
+- [0305] chore: jot down dwell timing idea
