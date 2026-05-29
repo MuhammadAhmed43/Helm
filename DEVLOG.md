@@ -351,3 +351,4 @@
 - [0349] chore: log mediapipe model load time
 - [0350] style: align glass border opacities
 - [0351] docs: outline future eye-tracking hook
+- [0352] chore: note retina display tuning
