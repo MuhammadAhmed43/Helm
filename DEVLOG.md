@@ -414,3 +414,4 @@
 - [0412] docs: snapshot keyboard accessibility plan
 - [0413] chore: note rsvp dwell timing
 - [0414] style: trim unused css selector
+- [0415] docs: append testing protocol
