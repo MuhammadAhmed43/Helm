@@ -310,3 +310,4 @@
 - [0308] style: harmonize spacing scale
 - [0309] docs: link to upstream issue context
 - [0310] chore: capture release checklist item
+- [0311] docs: outline future toggle behavior
