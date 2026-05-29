@@ -270,3 +270,4 @@
 - [0268] chore: revisit serenade-driver imports
 - [0269] docs: outline future scroll modes
 - [0270] chore: tag potential perf hotspot
+- [0271] style: clean up var ordering
