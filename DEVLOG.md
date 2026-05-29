@@ -6,3 +6,4 @@
 - [0004] chore: note design decision
 - [0005] style: reorder css properties
 - [0006] docs: add usage note
+- [0007] chore: log layout exploration
