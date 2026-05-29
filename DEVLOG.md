@@ -328,3 +328,4 @@
 - [0326] docs: clarify settings schema
 - [0327] chore: explore status pill copy
 - [0328] docs: prototype error empty state
+- [0329] chore: track installer icon dimensions
