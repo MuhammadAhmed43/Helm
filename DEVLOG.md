@@ -93,3 +93,4 @@
 - [0091] docs: refine hover-free wording
 - [0092] chore: revisit sidebar dimension
 - [0093] style: smooth animation easing curve
+- [0094] docs: enumerate click mode states
