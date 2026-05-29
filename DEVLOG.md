@@ -302,3 +302,4 @@
 - [0300] chore: note design decision
 - [0301] style: reorder css properties
 - [0302] docs: add usage note
+- [0303] chore: log layout exploration
