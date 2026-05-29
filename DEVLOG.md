@@ -365,3 +365,4 @@
 - [0363] docs: log keyboard repeat rate consideration
 - [0364] chore: jot down ipc rate idea
 - [0365] docs: capture friction in setup flow
+- [0366] chore: outline localization plan
