@@ -370,3 +370,4 @@
 - [0368] chore: track squirrel logging path
 - [0369] style: round consistency pass
 - [0370] docs: append developer handoff note
+- [0371] chore: tweak indentation
