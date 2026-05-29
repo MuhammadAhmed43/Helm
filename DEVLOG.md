@@ -116,3 +116,4 @@
 - [0114] chore: confirm mirror toggle default
 - [0115] style: refine focus ring color
 - [0116] docs: snapshot keyboard accessibility plan
+- [0117] chore: note rsvp dwell timing
