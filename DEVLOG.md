@@ -337,3 +337,4 @@
 - [0335] docs: reflect on dark mode tokens
 - [0336] chore: confirm mirror toggle default
 - [0337] style: refine focus ring color
+- [0338] docs: snapshot keyboard accessibility plan
