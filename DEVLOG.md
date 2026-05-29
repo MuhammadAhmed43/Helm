@@ -419,3 +419,4 @@
 - [0417] docs: outline future scroll modes
 - [0418] chore: tag potential perf hotspot
 - [0419] style: clean up var ordering
+- [0420] docs: clarify aria-pressed semantics
