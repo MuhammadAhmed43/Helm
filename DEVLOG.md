@@ -179,3 +179,4 @@
 - [0177] style: rename utility class
 - [0178] docs: clarify settings schema
 - [0179] chore: explore status pill copy
+- [0180] docs: prototype error empty state
