@@ -377,3 +377,4 @@
 - [0375] style: reorder css properties
 - [0376] docs: add usage note
 - [0377] chore: log layout exploration
+- [0378] docs: capture a11y consideration
