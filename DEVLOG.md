@@ -119,3 +119,4 @@
 - [0117] chore: note rsvp dwell timing
 - [0118] style: trim unused css selector
 - [0119] docs: append testing protocol
+- [0120] chore: revisit serenade-driver imports
