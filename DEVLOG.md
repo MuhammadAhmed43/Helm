@@ -128,3 +128,4 @@
 - [0126] docs: append calibration tip
 - [0127] chore: log mediapipe model load time
 - [0128] style: align glass border opacities
+- [0129] docs: outline future eye-tracking hook
