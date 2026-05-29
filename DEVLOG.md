@@ -185,3 +185,4 @@
 - [0183] chore: validate forge maker output
 - [0184] style: simplify shadow stack
 - [0185] docs: jot multi-monitor caveat
+- [0186] chore: log windows symlink workaround
