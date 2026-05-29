@@ -326,3 +326,4 @@
 - [0324] chore: standardize file header
 - [0325] style: rename utility class
 - [0326] docs: clarify settings schema
+- [0327] chore: explore status pill copy
