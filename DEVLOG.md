@@ -392,3 +392,4 @@
 - [0390] docs: enumerate click mode states
 - [0391] chore: review camera permission flow
 - [0392] docs: describe drag cancellation cases
+- [0393] chore: revisit keyboard layer order
