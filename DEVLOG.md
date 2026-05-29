@@ -255,3 +255,4 @@
 - [0253] chore: explore status pill copy
 - [0254] docs: prototype error empty state
 - [0255] chore: track installer icon dimensions
+- [0256] docs: record squirrel hook ordering
