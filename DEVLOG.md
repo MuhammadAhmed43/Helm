@@ -140,3 +140,4 @@
 - [0138] docs: capture overlay z-index ladder
 - [0139] chore: revisit context bridge surface
 - [0140] style: align color-mix usage
+- [0141] docs: log keyboard repeat rate consideration
