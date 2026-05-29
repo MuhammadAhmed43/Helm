@@ -387,3 +387,4 @@
 - [0385] docs: outline future toggle behavior
 - [0386] chore: track lint warning fix
 - [0387] docs: refine hover-free wording
+- [0388] chore: revisit sidebar dimension
