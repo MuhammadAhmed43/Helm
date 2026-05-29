@@ -102,3 +102,4 @@
 - [0100] chore: prune dead todo
 - [0101] docs: cross-link build instructions
 - [0102] chore: standardize file header
+- [0103] style: rename utility class
