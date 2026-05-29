@@ -431,3 +431,4 @@
 - [0429] style: tweak hairline border weight
 - [0430] docs: record squirrel firstrun behavior
 - [0431] chore: note csp considerations
+- [0432] docs: prototype run-at-login wording
