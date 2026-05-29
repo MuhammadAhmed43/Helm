@@ -265,3 +265,4 @@
 - [0263] style: refine focus ring color
 - [0264] docs: snapshot keyboard accessibility plan
 - [0265] chore: note rsvp dwell timing
+- [0266] style: trim unused css selector
