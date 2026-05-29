@@ -117,3 +117,4 @@
 - [0115] style: refine focus ring color
 - [0116] docs: snapshot keyboard accessibility plan
 - [0117] chore: note rsvp dwell timing
+- [0118] style: trim unused css selector
