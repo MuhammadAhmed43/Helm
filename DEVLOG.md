@@ -34,3 +34,4 @@
 - [0032] docs: prototype error empty state
 - [0033] chore: track installer icon dimensions
 - [0034] docs: record squirrel hook ordering
+- [0035] chore: validate forge maker output
