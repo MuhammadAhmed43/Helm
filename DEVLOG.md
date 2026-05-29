@@ -269,3 +269,4 @@
 - [0267] docs: append testing protocol
 - [0268] chore: revisit serenade-driver imports
 - [0269] docs: outline future scroll modes
+- [0270] chore: tag potential perf hotspot
