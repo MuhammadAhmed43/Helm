@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+	<!-- XXX: localization hazard: relying on the untranslated window title for View > Toggle Developer Tools (Screen Overlay) -->
+	<title>Helm Screen Overlay</title>
+	<link rel="stylesheet" type="text/css" href="../../core/tracky-mouse.css">
+	<link rel="stylesheet" type="text/css" href="screen-overlay.css">
+	<!-- <link rel="icon" type="image/png" sizes="16x16" href="../images/tracky-mouse-logo-16.png"> -->
+	<!-- <link rel="icon" type="image/png" sizes="512x512" href="../images/tracky-mouse-logo-512.png"> -->
+</head>
+
+<body>
+	<div class="tracky-mouse-absolute-center">
+		<div class="tracky-mouse-screen-overlay-status-indica
+		tor tracky-mouse-manual-takeback-indicator">
+			<img src="../images/manual-takeback.svg" alt="hand reaching for mouse" width="128" height="128">
+		</div>
+		<div class="tracky-mouse-screen-overlay-status-indicator tracky-mouse-head-not-found-indicator">
+			<img src="../images/head-not-found.svg" alt="head not found" width="128" height="128">
+		</div>
+	</div>
+	<div id="tracky-mouse-screen-overlay-message">
+		<div class="tracky-mouse-manual-takeback-indicator">
+			<!-- Pausing temporarily for manual takeback. -->
+			<!-- Manual Takeback -->
+			<!-- Will resume in <span id="countdown">5</span> seconds. -->
+			Will resume after mouse stops moving.
+		</div>
+		<div class="tracky-mouse-no-takeback-indicator">
+			Press F9 to <span id="enable-disable">toggle</span> Tracky Mouse.
+		</div>
+	</div>
+
+	<div id="click-mode-sidebar">
+		<button id="mode-left" class="mode-button active" title="Left Click">
+			<svg viewBox="0 0 24 24">
+				<path fill="currentColor"
+					d="M11,2A2,2 0 0,1 13,4V15.5H11V2M15.5,10.5V11.5L14,13.5V16L15.5,20.5V22H11.5V20.5L13,16V13.5L11.5,11.5V10.5H15.5M7.5,10.5V11.5L9,13.5V16L7.5,20.5V22H3.5V20.5L5,16V13.5L3.5,11.5V10.5H7.5M11.5,16V13.5L10,11.5V10.5H14V11.5L12.5,13.5V16H11.5Z" />
+			</svg>
+		</button>
+		<button id="mode-right" class="mode-button" title="Right Click">
+			<svg viewBox="0 0 24 24">
+				<path fill="currentColor"
+					d="M13,2A2,2 0 0,1 11,4V15.5H13V2M8.5,10.5V11.5L10,13.5V16L8.5,20.5V22H12.5V20.5L11,16V13.5L12.5,11.5V10.5H8.5M16.5,10.5V11.5L15,13.5V16L16.5,20.5V22H20.5V20.5L19,16V13.5L20.5,11.5V10.5H16.5M12.5,16V13.5L14,11.5V10.5H10V11.5L11.5,13.5V16H12.5Z" />
+			</svg>
+		</button>
+		<button id="mode-none" class="mode-button" title="No Click">
+			<svg viewBox="0 0 24 24">
+				<path fill="currentColor"
+					d="M12,2A10,10 0 1,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 17.66,6.34L6.34,17.66A8,8 0 0,1 12,4M12,20A8,8 0 0,1 6.34,17.66L17.66,6.34A8,8 0 0,1 12,20Z" />
+			</svg>
+		</button>
+		<button id="mode-drag" class="mode-button" title="Drag (click to pick up, click again to drop)">
+			<svg viewBox="0 0 24 24">
+				<path fill="currentColor"
+					d="M13,6V11H18V7.75L22.25,12L18,16.25V13H13V18H16.25L12,22.25L7.75,18H11V13H6V16.25L1.75,12L6,7.75V11H11V6H7.75L12,1.75L16.25,6H13Z" />
+			</svg>
+		</button>
+		<button id="toggle-keyboard" class="mode-button" title="Virtual Keyboard">
+			<svg viewBox="0 0 24 24">
+				<path fill="currentColor"
+					d="M20,7V17H4V7H20M20,5H4A2,2 0 0,0 2,7V17A2,2 0 0,0 4,19H20A2,2 0 0,0 22,17V7A2,2 0 0,0 20,5M11,8H13V10H11V8M11,11H13V13H11V11M8,8H10V10H8V8M8,11H10V13H8V11M5,8H7V10H5V8M5,11H7V13H5V11M14,14H10V16H14V14M14,11H16V13H14V11M14,8H16V10H14V8M17,11H19V13H17V11M17,8H19V10H17V8Z" />
+			</svg>
+		</button>
+		<button id="scroll-up" class="mode-button scroll-button" title="Scroll Up">
+			<svg viewBox="0 0 24 24">
+				<path fill="currentColor" d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
+			</svg>
+		</button>
+		<button id="scroll-down" class="mode-button scroll-button" title="Scroll Down">
+			<svg viewBox="0 0 24 24">
+				<path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+			</svg>
+		</button>
+	</div>
+
+	<div id="virtual-keyboard" class="hidden">
+		<div class="keyboard-header">
+			<span>Virtual Keyboard</span>
+			<button id="close-keyboard" class="keyboard-close-btn">×</button>
+		</div>
+		<div id="keyboard-keys-container" class="keyboard-keys">
+			<!-- keys will be added here via JS -->
+		</div>
+	</div>
+</body>
+
+<script src="../../core/tracky-mouse.js"></script>
+<script src="screen-overlay.js"></script>
+
+</html>
