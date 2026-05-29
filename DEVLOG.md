@@ -95,3 +95,4 @@
 - [0093] style: smooth animation easing curve
 - [0094] docs: enumerate click mode states
 - [0095] chore: review camera permission flow
+- [0096] docs: describe drag cancellation cases
