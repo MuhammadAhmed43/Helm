@@ -76,3 +76,4 @@
 - [0074] docs: append developer handoff note
 - [0075] chore: tweak indentation
 - [0076] style: align comment spacing
+- [0077] docs: clarify config option
