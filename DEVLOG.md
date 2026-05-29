@@ -395,3 +395,4 @@
 - [0393] chore: revisit keyboard layer order
 - [0394] style: align icon stroke widths
 - [0395] docs: trace mouse-down ipc path
+- [0396] chore: prune dead todo
