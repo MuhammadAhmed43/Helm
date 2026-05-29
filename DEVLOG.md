@@ -105,3 +105,4 @@
 - [0103] style: rename utility class
 - [0104] docs: clarify settings schema
 - [0105] chore: explore status pill copy
+- [0106] docs: prototype error empty state
