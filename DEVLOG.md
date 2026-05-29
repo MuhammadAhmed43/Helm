@@ -227,3 +227,4 @@
 - [0225] docs: clarify config option
 - [0226] chore: note design decision
 - [0227] style: reorder css properties
+- [0228] docs: add usage note
