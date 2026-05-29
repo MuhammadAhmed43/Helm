@@ -13,3 +13,4 @@
 - [0011] chore: record glass blur experiment
 - [0012] style: harmonize spacing scale
 - [0013] docs: link to upstream issue context
+- [0014] chore: capture release checklist item
