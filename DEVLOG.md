@@ -403,3 +403,4 @@
 - [0401] chore: explore status pill copy
 - [0402] docs: prototype error empty state
 - [0403] chore: track installer icon dimensions
+- [0404] docs: record squirrel hook ordering
