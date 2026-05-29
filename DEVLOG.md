@@ -271,3 +271,4 @@
 - [0269] docs: outline future scroll modes
 - [0270] chore: tag potential perf hotspot
 - [0271] style: clean up var ordering
+- [0272] docs: clarify aria-pressed semantics
