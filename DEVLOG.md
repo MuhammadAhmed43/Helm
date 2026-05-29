@@ -171,3 +171,4 @@
 - [0169] chore: review camera permission flow
 - [0170] docs: describe drag cancellation cases
 - [0171] chore: revisit keyboard layer order
+- [0172] style: align icon stroke widths
