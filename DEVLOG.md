@@ -393,3 +393,4 @@
 - [0391] chore: review camera permission flow
 - [0392] docs: describe drag cancellation cases
 - [0393] chore: revisit keyboard layer order
+- [0394] style: align icon stroke widths
