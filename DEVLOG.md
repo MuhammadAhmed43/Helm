@@ -48,3 +48,4 @@
 - [0046] chore: revisit serenade-driver imports
 - [0047] docs: outline future scroll modes
 - [0048] chore: tag potential perf hotspot
+- [0049] style: clean up var ordering
