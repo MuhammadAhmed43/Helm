@@ -225,3 +225,4 @@
 - [0223] chore: tweak indentation
 - [0224] style: align comment spacing
 - [0225] docs: clarify config option
+- [0226] chore: note design decision
