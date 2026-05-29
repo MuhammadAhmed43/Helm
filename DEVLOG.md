@@ -289,3 +289,4 @@
 - [0287] chore: revisit context bridge surface
 - [0288] style: align color-mix usage
 - [0289] docs: log keyboard repeat rate consideration
+- [0290] chore: jot down ipc rate idea
