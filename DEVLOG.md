@@ -182,3 +182,4 @@
 - [0180] docs: prototype error empty state
 - [0181] chore: track installer icon dimensions
 - [0182] docs: record squirrel hook ordering
+- [0183] chore: validate forge maker output
