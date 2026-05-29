@@ -425,3 +425,4 @@
 - [0423] chore: log mediapipe model load time
 - [0424] style: align glass border opacities
 - [0425] docs: outline future eye-tracking hook
+- [0426] chore: note retina display tuning
