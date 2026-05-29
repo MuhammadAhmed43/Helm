@@ -244,3 +244,4 @@
 - [0242] docs: enumerate click mode states
 - [0243] chore: review camera permission flow
 - [0244] docs: describe drag cancellation cases
+- [0245] chore: revisit keyboard layer order
