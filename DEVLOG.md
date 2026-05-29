@@ -123,3 +123,4 @@
 - [0121] docs: outline future scroll modes
 - [0122] chore: tag potential perf hotspot
 - [0123] style: clean up var ordering
+- [0124] docs: clarify aria-pressed semantics
