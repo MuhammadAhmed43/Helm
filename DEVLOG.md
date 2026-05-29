@@ -165,3 +165,4 @@
 - [0163] docs: outline future toggle behavior
 - [0164] chore: track lint warning fix
 - [0165] docs: refine hover-free wording
+- [0166] chore: revisit sidebar dimension
