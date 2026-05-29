@@ -325,3 +325,4 @@
 - [0323] docs: cross-link build instructions
 - [0324] chore: standardize file header
 - [0325] style: rename utility class
+- [0326] docs: clarify settings schema
