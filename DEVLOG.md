@@ -151,3 +151,4 @@
 - [0149] chore: tweak indentation
 - [0150] style: align comment spacing
 - [0151] docs: clarify config option
+- [0152] chore: note design decision
