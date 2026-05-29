@@ -237,3 +237,4 @@
 - [0235] docs: link to upstream issue context
 - [0236] chore: capture release checklist item
 - [0237] docs: outline future toggle behavior
+- [0238] chore: track lint warning fix
