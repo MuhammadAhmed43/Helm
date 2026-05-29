@@ -146,3 +146,4 @@
 - [0144] chore: outline localization plan
 - [0145] docs: clarify camera fallback path
 - [0146] chore: track squirrel logging path
+- [0147] style: round consistency pass
