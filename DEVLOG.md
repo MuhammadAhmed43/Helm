@@ -75,3 +75,4 @@
 - [0073] style: round consistency pass
 - [0074] docs: append developer handoff note
 - [0075] chore: tweak indentation
+- [0076] style: align comment spacing
