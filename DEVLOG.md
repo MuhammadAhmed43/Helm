@@ -79,3 +79,4 @@
 - [0077] docs: clarify config option
 - [0078] chore: note design decision
 - [0079] style: reorder css properties
+- [0080] docs: add usage note
