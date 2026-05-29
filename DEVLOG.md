@@ -203,3 +203,4 @@
 - [0201] chore: log mediapipe model load time
 - [0202] style: align glass border opacities
 - [0203] docs: outline future eye-tracking hook
+- [0204] chore: note retina display tuning
