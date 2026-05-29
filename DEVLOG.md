@@ -252,3 +252,4 @@
 - [0250] chore: standardize file header
 - [0251] style: rename utility class
 - [0252] docs: clarify settings schema
+- [0253] chore: explore status pill copy
