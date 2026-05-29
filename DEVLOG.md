@@ -70,3 +70,4 @@
 - [0068] chore: jot down ipc rate idea
 - [0069] docs: capture friction in setup flow
 - [0070] chore: outline localization plan
+- [0071] docs: clarify camera fallback path
