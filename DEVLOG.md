@@ -49,3 +49,4 @@
 - [0047] docs: outline future scroll modes
 - [0048] chore: tag potential perf hotspot
 - [0049] style: clean up var ordering
+- [0050] docs: clarify aria-pressed semantics
