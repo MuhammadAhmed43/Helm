@@ -301,3 +301,4 @@
 - [0299] docs: clarify config option
 - [0300] chore: note design decision
 - [0301] style: reorder css properties
+- [0302] docs: add usage note
