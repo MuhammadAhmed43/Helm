@@ -407,3 +407,4 @@
 - [0405] chore: validate forge maker output
 - [0406] style: simplify shadow stack
 - [0407] docs: jot multi-monitor caveat
+- [0408] chore: log windows symlink workaround
