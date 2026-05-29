@@ -312,3 +312,4 @@
 - [0310] chore: capture release checklist item
 - [0311] docs: outline future toggle behavior
 - [0312] chore: track lint warning fix
+- [0313] docs: refine hover-free wording
