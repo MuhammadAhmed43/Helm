@@ -107,3 +107,4 @@
 - [0105] chore: explore status pill copy
 - [0106] docs: prototype error empty state
 - [0107] chore: track installer icon dimensions
+- [0108] docs: record squirrel hook ordering
