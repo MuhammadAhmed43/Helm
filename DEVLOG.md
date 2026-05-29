@@ -80,3 +80,4 @@
 - [0078] chore: note design decision
 - [0079] style: reorder css properties
 - [0080] docs: add usage note
+- [0081] chore: log layout exploration
