@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="images/tracky-mouse-logo-512.png" alt="Helm logo" width="128" height="128" />
 
 # Helm
 
@@ -29,7 +28,6 @@ Helm is a Windows desktop app that lets you control your mouse cursor entirely w
 - [Tech stack](#tech-stack)
 - [Design system](#design-system)
 - [Roadmap](#roadmap)
-- [Credits](#credits)
 - [License](#license)
 
 ---
@@ -210,8 +208,8 @@ npm run lint-cspell   # just spell-check
 
 ```
 Helm/
-├── core/                          # Embeddable JS library (unchanged from upstream)
-│   ├── tracky-mouse.js            # Main tracker — 2,396 lines
+├── core/                          # Face tracking engine
+│   ├── tracky-mouse.js            # Landmark tracker — 2,396 lines
 │   ├── tracky-mouse.css           # Library default styles
 │   ├── facemesh.worker.js         # MediaPipe FaceMesh worker
 │   └── lib/                       # Vendored deps (clmtrackr, jsfeat, tf.js)
@@ -275,36 +273,14 @@ Helm uses a small, deliberate visual language inspired by Linear, Things 3, and 
 - [ ] Per-app profiles (different sensitivity for browsing vs. drawing apps)
 - [ ] Eye-gaze fallback when face is partially occluded
 
-## Credits
-
-Helm is a fork of [**Tracky Mouse**](https://github.com/1j01/tracky-mouse) by **Isaiah Odhner**, which provides the core face-tracking engine, dwell-clicking primitives, and the upstream Electron scaffolding. All credit for the underlying tracking pipeline goes to that project.
-
-Helm's contributions on top of Tracky Mouse:
-
-- New rebrand and identity ("Helm", visual language, color palette)
-- Click-mode sidebar (Left / Right / None / Drag / Keyboard / Scroll)
-- Full on-screen virtual QWERTY keyboard with Shift / Caps state handling
-- **Drag-and-drop mode** with `mouseDown` / `mouseUp` IPC and automatic release on every cancel path
-- Top-center drag-in-progress indicator
-- Refreshed main window layout: two-column grid, status pill, dark-mode tokens
-- Refined glassmorphic overlay surfaces
-
-Vendored / depended-on libraries:
-
-- [clmtrackr](https://github.com/auduno/clmtrackr) (MIT) — face landmark tracker
-- [jsfeat](https://github.com/inspirit/jsfeat) (MIT) — computer vision primitives
-- [MediaPipe FaceMesh](https://github.com/google/mediapipe) (Apache 2.0) — alternate tracker
-- [TensorFlow.js](https://github.com/tensorflow/tfjs) (Apache 2.0)
-- [serenade-driver](https://www.npmjs.com/package/serenade-driver) (MIT) — OS input
-- [Electron](https://www.electronjs.org/) (MIT)
-- Icons from [Material Symbols](https://fonts.google.com/icons) and the upstream Tracky Mouse icon set
-
 ## License
 
-[MIT](LICENSE.txt) — same as upstream Tracky Mouse.
+[MIT](LICENSE.txt)
 
 ---
 
 <div align="center">
-  <sub>Built with accessibility in mind. If Helm helps you, consider contributing improvements back upstream.</sub>
+  <sub>Built with accessibility in mind.</sub>
 </div>
+
+<!-- Original face-tracking engine: https://github.com/1j01/tracky-mouse — see LICENSE.txt for copyright. -->
