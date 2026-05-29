@@ -250,3 +250,4 @@
 - [0248] chore: prune dead todo
 - [0249] docs: cross-link build instructions
 - [0250] chore: standardize file header
+- [0251] style: rename utility class
