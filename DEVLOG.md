@@ -402,3 +402,4 @@
 - [0400] docs: clarify settings schema
 - [0401] chore: explore status pill copy
 - [0402] docs: prototype error empty state
+- [0403] chore: track installer icon dimensions
