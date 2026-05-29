@@ -50,3 +50,4 @@
 - [0048] chore: tag potential perf hotspot
 - [0049] style: clean up var ordering
 - [0050] docs: clarify aria-pressed semantics
+- [0051] chore: record gpu cache cleanup
