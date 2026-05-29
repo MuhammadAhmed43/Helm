@@ -279,3 +279,4 @@
 - [0277] docs: outline future eye-tracking hook
 - [0278] chore: note retina display tuning
 - [0279] docs: snapshot prefers-reduced-motion
+- [0280] chore: capture electron version bump
