@@ -378,3 +378,4 @@
 - [0376] docs: add usage note
 - [0377] chore: log layout exploration
 - [0378] docs: capture a11y consideration
+- [0379] chore: jot down dwell timing idea
