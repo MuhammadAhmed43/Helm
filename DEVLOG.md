@@ -91,3 +91,4 @@
 - [0089] docs: outline future toggle behavior
 - [0090] chore: track lint warning fix
 - [0091] docs: refine hover-free wording
+- [0092] chore: revisit sidebar dimension
