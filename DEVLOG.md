@@ -261,3 +261,4 @@
 - [0259] docs: jot multi-monitor caveat
 - [0260] chore: log windows symlink workaround
 - [0261] docs: reflect on dark mode tokens
+- [0262] chore: confirm mirror toggle default
