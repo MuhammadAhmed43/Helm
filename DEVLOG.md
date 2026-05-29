@@ -340,3 +340,4 @@
 - [0338] docs: snapshot keyboard accessibility plan
 - [0339] chore: note rsvp dwell timing
 - [0340] style: trim unused css selector
+- [0341] docs: append testing protocol
