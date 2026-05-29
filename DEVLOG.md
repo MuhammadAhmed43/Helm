@@ -61,3 +61,4 @@
 - [0059] style: tweak hairline border weight
 - [0060] docs: record squirrel firstrun behavior
 - [0061] chore: note csp considerations
+- [0062] docs: prototype run-at-login wording
