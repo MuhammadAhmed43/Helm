@@ -213,3 +213,4 @@
 - [0211] chore: dedupe asset paths
 - [0212] docs: capture overlay z-index ladder
 - [0213] chore: revisit context bridge surface
+- [0214] style: align color-mix usage
