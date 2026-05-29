@@ -160,3 +160,4 @@
 - [0158] docs: note observed tracking edge case
 - [0159] chore: record glass blur experiment
 - [0160] style: harmonize spacing scale
+- [0161] docs: link to upstream issue context
