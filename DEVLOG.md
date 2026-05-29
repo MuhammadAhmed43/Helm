@@ -170,3 +170,4 @@
 - [0168] docs: enumerate click mode states
 - [0169] chore: review camera permission flow
 - [0170] docs: describe drag cancellation cases
+- [0171] chore: revisit keyboard layer order
