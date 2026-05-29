@@ -222,3 +222,4 @@
 - [0220] chore: track squirrel logging path
 - [0221] style: round consistency pass
 - [0222] docs: append developer handoff note
+- [0223] chore: tweak indentation
