@@ -342,3 +342,4 @@
 - [0340] style: trim unused css selector
 - [0341] docs: append testing protocol
 - [0342] chore: revisit serenade-driver imports
+- [0343] docs: outline future scroll modes
