@@ -379,3 +379,4 @@
 - [0377] chore: log layout exploration
 - [0378] docs: capture a11y consideration
 - [0379] chore: jot down dwell timing idea
+- [0380] docs: note observed tracking edge case
