@@ -214,3 +214,4 @@
 - [0212] docs: capture overlay z-index ladder
 - [0213] chore: revisit context bridge surface
 - [0214] style: align color-mix usage
+- [0215] docs: log keyboard repeat rate consideration
