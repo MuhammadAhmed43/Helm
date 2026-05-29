@@ -15,3 +15,4 @@
 - [0013] docs: link to upstream issue context
 - [0014] chore: capture release checklist item
 - [0015] docs: outline future toggle behavior
+- [0016] chore: track lint warning fix
