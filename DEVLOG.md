@@ -224,3 +224,4 @@
 - [0222] docs: append developer handoff note
 - [0223] chore: tweak indentation
 - [0224] style: align comment spacing
+- [0225] docs: clarify config option
