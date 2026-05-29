@@ -309,3 +309,4 @@
 - [0307] chore: record glass blur experiment
 - [0308] style: harmonize spacing scale
 - [0309] docs: link to upstream issue context
+- [0310] chore: capture release checklist item
