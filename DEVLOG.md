@@ -409,3 +409,4 @@
 - [0407] docs: jot multi-monitor caveat
 - [0408] chore: log windows symlink workaround
 - [0409] docs: reflect on dark mode tokens
+- [0410] chore: confirm mirror toggle default
