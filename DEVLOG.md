@@ -53,3 +53,4 @@
 - [0051] chore: record gpu cache cleanup
 - [0052] docs: append calibration tip
 - [0053] chore: log mediapipe model load time
+- [0054] style: align glass border opacities
