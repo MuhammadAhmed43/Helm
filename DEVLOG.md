@@ -30,3 +30,4 @@
 - [0028] chore: standardize file header
 - [0029] style: rename utility class
 - [0030] docs: clarify settings schema
+- [0031] chore: explore status pill copy
