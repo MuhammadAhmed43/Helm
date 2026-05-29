@@ -90,3 +90,4 @@
 - [0088] chore: capture release checklist item
 - [0089] docs: outline future toggle behavior
 - [0090] chore: track lint warning fix
+- [0091] docs: refine hover-free wording
