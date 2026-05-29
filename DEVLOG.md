@@ -100,3 +100,4 @@
 - [0098] style: align icon stroke widths
 - [0099] docs: trace mouse-down ipc path
 - [0100] chore: prune dead todo
+- [0101] docs: cross-link build instructions
