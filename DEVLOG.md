@@ -211,3 +211,4 @@
 - [0209] chore: note csp considerations
 - [0210] docs: prototype run-at-login wording
 - [0211] chore: dedupe asset paths
+- [0212] docs: capture overlay z-index ladder
