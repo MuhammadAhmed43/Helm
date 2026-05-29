@@ -81,3 +81,4 @@
 - [0079] style: reorder css properties
 - [0080] docs: add usage note
 - [0081] chore: log layout exploration
+- [0082] docs: capture a11y consideration
