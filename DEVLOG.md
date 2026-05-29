@@ -316,3 +316,4 @@
 - [0314] chore: revisit sidebar dimension
 - [0315] style: smooth animation easing curve
 - [0316] docs: enumerate click mode states
+- [0317] chore: review camera permission flow
