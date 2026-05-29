@@ -86,3 +86,4 @@
 - [0084] docs: note observed tracking edge case
 - [0085] chore: record glass blur experiment
 - [0086] style: harmonize spacing scale
+- [0087] docs: link to upstream issue context
