@@ -397,3 +397,4 @@
 - [0395] docs: trace mouse-down ipc path
 - [0396] chore: prune dead todo
 - [0397] docs: cross-link build instructions
+- [0398] chore: standardize file header
