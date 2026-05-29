@@ -375,3 +375,4 @@
 - [0373] docs: clarify config option
 - [0374] chore: note design decision
 - [0375] style: reorder css properties
+- [0376] docs: add usage note
