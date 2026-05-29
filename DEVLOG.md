@@ -41,3 +41,4 @@
 - [0039] docs: reflect on dark mode tokens
 - [0040] chore: confirm mirror toggle default
 - [0041] style: refine focus ring color
+- [0042] docs: snapshot keyboard accessibility plan
