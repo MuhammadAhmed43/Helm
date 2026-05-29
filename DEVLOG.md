@@ -349,3 +349,4 @@
 - [0347] chore: record gpu cache cleanup
 - [0348] docs: append calibration tip
 - [0349] chore: log mediapipe model load time
+- [0350] style: align glass border opacities
