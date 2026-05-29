@@ -344,3 +344,4 @@
 - [0342] chore: revisit serenade-driver imports
 - [0343] docs: outline future scroll modes
 - [0344] chore: tag potential perf hotspot
+- [0345] style: clean up var ordering
