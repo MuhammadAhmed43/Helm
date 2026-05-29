@@ -398,3 +398,4 @@
 - [0396] chore: prune dead todo
 - [0397] docs: cross-link build instructions
 - [0398] chore: standardize file header
+- [0399] style: rename utility class
