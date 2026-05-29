@@ -52,3 +52,4 @@
 - [0050] docs: clarify aria-pressed semantics
 - [0051] chore: record gpu cache cleanup
 - [0052] docs: append calibration tip
+- [0053] chore: log mediapipe model load time
