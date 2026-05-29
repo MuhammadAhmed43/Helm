@@ -8,3 +8,4 @@
 - [0006] docs: add usage note
 - [0007] chore: log layout exploration
 - [0008] docs: capture a11y consideration
+- [0009] chore: jot down dwell timing idea
