@@ -311,3 +311,4 @@
 - [0309] docs: link to upstream issue context
 - [0310] chore: capture release checklist item
 - [0311] docs: outline future toggle behavior
+- [0312] chore: track lint warning fix
