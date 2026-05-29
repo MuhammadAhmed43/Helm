@@ -143,3 +143,4 @@
 - [0141] docs: log keyboard repeat rate consideration
 - [0142] chore: jot down ipc rate idea
 - [0143] docs: capture friction in setup flow
+- [0144] chore: outline localization plan
