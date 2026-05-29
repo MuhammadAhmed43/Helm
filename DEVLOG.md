@@ -345,3 +345,4 @@
 - [0343] docs: outline future scroll modes
 - [0344] chore: tag potential perf hotspot
 - [0345] style: clean up var ordering
+- [0346] docs: clarify aria-pressed semantics
