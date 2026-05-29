@@ -1,0 +1,17 @@
+node_modules/
+out/
+dist/
+build/
+*.log
+*.pid
+*.seed
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+.env
+.env.local
+coverage/
+.nyc_output/
