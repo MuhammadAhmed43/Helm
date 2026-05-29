@@ -36,3 +36,4 @@
 - [0034] docs: record squirrel hook ordering
 - [0035] chore: validate forge maker output
 - [0036] style: simplify shadow stack
+- [0037] docs: jot multi-monitor caveat
