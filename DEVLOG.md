@@ -404,3 +404,4 @@
 - [0402] docs: prototype error empty state
 - [0403] chore: track installer icon dimensions
 - [0404] docs: record squirrel hook ordering
+- [0405] chore: validate forge maker output
