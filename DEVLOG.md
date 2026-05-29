@@ -25,3 +25,4 @@
 - [0023] chore: revisit keyboard layer order
 - [0024] style: align icon stroke widths
 - [0025] docs: trace mouse-down ipc path
+- [0026] chore: prune dead todo
