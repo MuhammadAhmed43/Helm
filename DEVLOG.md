@@ -77,3 +77,4 @@
 - [0075] chore: tweak indentation
 - [0076] style: align comment spacing
 - [0077] docs: clarify config option
+- [0078] chore: note design decision
