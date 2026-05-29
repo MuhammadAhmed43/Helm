@@ -241,3 +241,4 @@
 - [0239] docs: refine hover-free wording
 - [0240] chore: revisit sidebar dimension
 - [0241] style: smooth animation easing curve
+- [0242] docs: enumerate click mode states
