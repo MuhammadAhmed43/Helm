@@ -303,3 +303,4 @@
 - [0301] style: reorder css properties
 - [0302] docs: add usage note
 - [0303] chore: log layout exploration
+- [0304] docs: capture a11y consideration
