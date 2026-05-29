@@ -382,3 +382,4 @@
 - [0380] docs: note observed tracking edge case
 - [0381] chore: record glass blur experiment
 - [0382] style: harmonize spacing scale
+- [0383] docs: link to upstream issue context
