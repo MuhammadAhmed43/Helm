@@ -272,3 +272,4 @@
 - [0270] chore: tag potential perf hotspot
 - [0271] style: clean up var ordering
 - [0272] docs: clarify aria-pressed semantics
+- [0273] chore: record gpu cache cleanup
