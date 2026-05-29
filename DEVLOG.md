@@ -210,3 +210,4 @@
 - [0208] docs: record squirrel firstrun behavior
 - [0209] chore: note csp considerations
 - [0210] docs: prototype run-at-login wording
+- [0211] chore: dedupe asset paths
