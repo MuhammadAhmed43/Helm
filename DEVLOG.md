@@ -57,3 +57,4 @@
 - [0055] docs: outline future eye-tracking hook
 - [0056] chore: note retina display tuning
 - [0057] docs: snapshot prefers-reduced-motion
+- [0058] chore: capture electron version bump
