@@ -89,3 +89,4 @@
 - [0087] docs: link to upstream issue context
 - [0088] chore: capture release checklist item
 - [0089] docs: outline future toggle behavior
+- [0090] chore: track lint warning fix
