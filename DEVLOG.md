@@ -356,3 +356,4 @@
 - [0354] chore: capture electron version bump
 - [0355] style: tweak hairline border weight
 - [0356] docs: record squirrel firstrun behavior
+- [0357] chore: note csp considerations
