@@ -373,3 +373,4 @@
 - [0371] chore: tweak indentation
 - [0372] style: align comment spacing
 - [0373] docs: clarify config option
+- [0374] chore: note design decision
