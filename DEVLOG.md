@@ -204,3 +204,4 @@
 - [0202] style: align glass border opacities
 - [0203] docs: outline future eye-tracking hook
 - [0204] chore: note retina display tuning
+- [0205] docs: snapshot prefers-reduced-motion
