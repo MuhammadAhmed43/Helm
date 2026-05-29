@@ -360,3 +360,4 @@
 - [0358] docs: prototype run-at-login wording
 - [0359] chore: dedupe asset paths
 - [0360] docs: capture overlay z-index ladder
+- [0361] chore: revisit context bridge surface
