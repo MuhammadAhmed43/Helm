@@ -266,3 +266,4 @@
 - [0264] docs: snapshot keyboard accessibility plan
 - [0265] chore: note rsvp dwell timing
 - [0266] style: trim unused css selector
+- [0267] docs: append testing protocol
