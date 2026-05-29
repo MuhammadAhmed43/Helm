@@ -28,3 +28,4 @@
 - [0026] chore: prune dead todo
 - [0027] docs: cross-link build instructions
 - [0028] chore: standardize file header
+- [0029] style: rename utility class
