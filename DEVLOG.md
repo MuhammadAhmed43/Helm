@@ -155,3 +155,4 @@
 - [0153] style: reorder css properties
 - [0154] docs: add usage note
 - [0155] chore: log layout exploration
+- [0156] docs: capture a11y consideration
