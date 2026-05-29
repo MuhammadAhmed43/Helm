@@ -381,3 +381,4 @@
 - [0379] chore: jot down dwell timing idea
 - [0380] docs: note observed tracking edge case
 - [0381] chore: record glass blur experiment
+- [0382] style: harmonize spacing scale
