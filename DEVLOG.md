@@ -180,3 +180,4 @@
 - [0178] docs: clarify settings schema
 - [0179] chore: explore status pill copy
 - [0180] docs: prototype error empty state
+- [0181] chore: track installer icon dimensions
