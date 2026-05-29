@@ -125,3 +125,4 @@
 - [0123] style: clean up var ordering
 - [0124] docs: clarify aria-pressed semantics
 - [0125] chore: record gpu cache cleanup
+- [0126] docs: append calibration tip
