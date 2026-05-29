@@ -216,3 +216,4 @@
 - [0214] style: align color-mix usage
 - [0215] docs: log keyboard repeat rate consideration
 - [0216] chore: jot down ipc rate idea
+- [0217] docs: capture friction in setup flow
