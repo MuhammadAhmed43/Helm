@@ -253,3 +253,4 @@
 - [0251] style: rename utility class
 - [0252] docs: clarify settings schema
 - [0253] chore: explore status pill copy
+- [0254] docs: prototype error empty state
