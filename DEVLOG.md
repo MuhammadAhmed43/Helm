@@ -263,3 +263,4 @@
 - [0261] docs: reflect on dark mode tokens
 - [0262] chore: confirm mirror toggle default
 - [0263] style: refine focus ring color
+- [0264] docs: snapshot keyboard accessibility plan
