@@ -420,3 +420,4 @@
 - [0418] chore: tag potential perf hotspot
 - [0419] style: clean up var ordering
 - [0420] docs: clarify aria-pressed semantics
+- [0421] chore: record gpu cache cleanup
