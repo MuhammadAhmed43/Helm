@@ -59,3 +59,4 @@
 - [0057] docs: snapshot prefers-reduced-motion
 - [0058] chore: capture electron version bump
 - [0059] style: tweak hairline border weight
+- [0060] docs: record squirrel firstrun behavior
