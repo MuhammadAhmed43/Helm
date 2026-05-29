@@ -173,3 +173,4 @@
 - [0171] chore: revisit keyboard layer order
 - [0172] style: align icon stroke widths
 - [0173] docs: trace mouse-down ipc path
+- [0174] chore: prune dead todo
