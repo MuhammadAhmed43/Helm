@@ -226,3 +226,4 @@
 - [0224] style: align comment spacing
 - [0225] docs: clarify config option
 - [0226] chore: note design decision
+- [0227] style: reorder css properties
