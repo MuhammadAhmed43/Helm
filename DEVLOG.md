@@ -66,3 +66,4 @@
 - [0064] docs: capture overlay z-index ladder
 - [0065] chore: revisit context bridge surface
 - [0066] style: align color-mix usage
+- [0067] docs: log keyboard repeat rate consideration
