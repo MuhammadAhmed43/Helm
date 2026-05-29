@@ -88,3 +88,4 @@
 - [0086] style: harmonize spacing scale
 - [0087] docs: link to upstream issue context
 - [0088] chore: capture release checklist item
+- [0089] docs: outline future toggle behavior
