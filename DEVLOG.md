@@ -324,3 +324,4 @@
 - [0322] chore: prune dead todo
 - [0323] docs: cross-link build instructions
 - [0324] chore: standardize file header
+- [0325] style: rename utility class
