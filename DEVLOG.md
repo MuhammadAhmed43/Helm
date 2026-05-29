@@ -295,3 +295,4 @@
 - [0293] docs: clarify camera fallback path
 - [0294] chore: track squirrel logging path
 - [0295] style: round consistency pass
+- [0296] docs: append developer handoff note
