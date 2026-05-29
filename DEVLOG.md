@@ -153,3 +153,4 @@
 - [0151] docs: clarify config option
 - [0152] chore: note design decision
 - [0153] style: reorder css properties
+- [0154] docs: add usage note
