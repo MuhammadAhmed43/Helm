@@ -220,3 +220,4 @@
 - [0218] chore: outline localization plan
 - [0219] docs: clarify camera fallback path
 - [0220] chore: track squirrel logging path
+- [0221] style: round consistency pass
