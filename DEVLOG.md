@@ -172,3 +172,4 @@
 - [0170] docs: describe drag cancellation cases
 - [0171] chore: revisit keyboard layer order
 - [0172] style: align icon stroke widths
+- [0173] docs: trace mouse-down ipc path
