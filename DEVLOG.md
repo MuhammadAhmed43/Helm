@@ -58,3 +58,4 @@
 - [0056] chore: note retina display tuning
 - [0057] docs: snapshot prefers-reduced-motion
 - [0058] chore: capture electron version bump
+- [0059] style: tweak hairline border weight
