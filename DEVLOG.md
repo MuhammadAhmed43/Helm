@@ -251,3 +251,4 @@
 - [0249] docs: cross-link build instructions
 - [0250] chore: standardize file header
 - [0251] style: rename utility class
+- [0252] docs: clarify settings schema
