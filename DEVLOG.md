@@ -188,3 +188,4 @@
 - [0186] chore: log windows symlink workaround
 - [0187] docs: reflect on dark mode tokens
 - [0188] chore: confirm mirror toggle default
+- [0189] style: refine focus ring color
