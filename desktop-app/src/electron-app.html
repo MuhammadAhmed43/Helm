@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' blob:">
+	<title>Helm</title>
+	<script src="../../core/lib/stats.js"></script>
+	<script src="../../core/lib/no-eval.js"></script>
+	<script src="../../core/lib/clmtrackr.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../core/tracky-mouse.css">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/tracky-mouse-logo-16.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="images/tracky-mouse-logo-512.png">
+
+	<style>
+		/* ----- Helm design system tokens ----- */
+		:root {
+			--helm-bg: #f7fafb;
+			--helm-surface: #ffffff;
+			--helm-surface-low: #f1f4f5;
+			--helm-surface-high: #e5e9ea;
+			--helm-surface-variant: #e0e3e4;
+			--helm-outline: #6f797c;
+			--helm-outline-variant: #bec8cb;
+			--helm-on-surface: #181c1d;
+			--helm-on-surface-variant: #3f484b;
+			--helm-primary: #006474;
+			--helm-primary-container: #2d7d8e;
+			--helm-on-primary: #ffffff;
+			--helm-secondary-container: #a8eafa;
+			--helm-on-secondary-container: #236b79;
+			--helm-error: #ba1a1a;
+
+			--helm-radius-sm: 6px;
+			--helm-radius: 12px;
+			--helm-radius-lg: 16px;
+			--helm-radius-pill: 9999px;
+
+			--helm-shadow-card: 0 10px 30px -8px rgba(45, 125, 142, 0.12);
+			--helm-shadow-hero: 0 16px 40px -10px rgba(0, 100, 116, 0.35);
+
+			--helm-font-body: "Inter", -apple-system, "Segoe UI", system-ui, sans-serif;
+			--helm-font-display: "DM Sans", "Inter", -apple-system, system-ui, sans-serif;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			:root {
+				--helm-bg: #0f1415;
+				--helm-surface: #1a1f20;
+				--helm-surface-low: #161a1b;
+				--helm-surface-high: #232829;
+				--helm-surface-variant: #2a3031;
+				--helm-outline: #8d979a;
+				--helm-outline-variant: #3f484b;
+				--helm-on-surface: #eef1f2;
+				--helm-on-surface-variant: #bec8cb;
+				--helm-primary: #87d2e4;
+				--helm-primary-container: #006474;
+				--helm-on-primary: #001f26;
+				--helm-secondary-container: #1a4750;
+				--helm-on-secondary-container: #a8eafa;
+			}
+		}
+
+		/* ----- Base layout ----- */
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: var(--helm-bg);
+			color: var(--helm-on-surface);
+			font-family: var(--helm-font-body);
+			font-size: 14px;
+			line-height: 1.5;
+			overflow: hidden;
+			height: 100%;
+		}
+
+		body {
+			display: flex;
+			flex-direction: column;
+		}
+
+		/* ----- Top header ----- */
+		.helm-header {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			padding: 14px 20px;
+			background: color-mix(in srgb, var(--helm-bg) 80%, transparent);
+			backdrop-filter: blur(10px);
+			-webkit-backdrop-filter: blur(10px);
+			border-bottom: 1px solid var(--helm-outline-variant);
+		}
+
+		.helm-logo {
+			width: 32px;
+			height: 32px;
+			border-radius: var(--helm-radius-sm);
+			background: var(--helm-primary-container);
+			color: var(--helm-on-primary);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-shrink: 0;
+		}
+
+		.helm-logo svg {
+			width: 18px;
+			height: 18px;
+		}
+
+		.helm-title {
+			font-family: var(--helm-font-display);
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 1;
+			letter-spacing: -0.01em;
+			margin: 0;
+		}
+
+		.helm-subtitle {
+			font-size: 11px;
+			font-weight: 500;
+			color: var(--helm-on-surface-variant);
+			opacity: 0.8;
+			letter-spacing: 0.02em;
+			margin: 2px 0 0;
+		}
+
+		/* ----- Main content area ----- */
+		main.helm-main {
+			flex: 1;
+			padding: 14px 20px 12px;
+			overflow: hidden;
+		}
+
+		/* ----- Skin the TrackyMouse-injected UI -----
+		   These overrides are deliberately !important because core/tracky-mouse.css
+		   sets max-width: 600px and display: flex on .tracky-mouse-ui, which would
+		   otherwise clamp our two-column layout to a narrow strip on the left. */
+		.tracky-mouse-ui {
+			--tracky-mouse-camera-view-min-height: 0;
+			display: grid !important;
+			grid-template-columns: minmax(320px, 1.1fr) minmax(0, 1fr) !important;
+			gap: 18px !important;
+			width: 100% !important;
+			max-width: none !important;
+			height: 100% !important;
+			padding: 0 !important;
+			margin: 0 !important;
+			background: transparent !important;
+			backdrop-filter: none !important;
+			border: none !important;
+			box-shadow: none !important;
+			box-sizing: border-box;
+			min-height: 0;
+		}
+
+		@media screen and (max-width: 720px) {
+			.tracky-mouse-ui {
+				grid-template-columns: 1fr !important;
+				grid-template-rows: auto 1fr !important;
+			}
+		}
+
+		.tracky-mouse-controls {
+			background: transparent !important;
+			padding: 0 4px 0 0 !important;
+			margin: 0 !important;
+			overflow-y: auto;
+			width: 100%;
+			min-width: 0;
+			align-self: stretch;
+			justify-self: stretch;
+		}
+
+		.tracky-mouse-controls::-webkit-scrollbar {
+			width: 6px;
+		}
+
+		.tracky-mouse-controls::-webkit-scrollbar-thumb {
+			background: var(--helm-outline-variant);
+			border-radius: 3px;
+		}
+
+		/* Hero Start/Stop button */
+		.tracky-mouse-start-stop-button {
+			display: block;
+			width: 100%;
+			min-height: 60px;
+			padding: 0 20px;
+			margin: 0 0 10px;
+			border: none;
+			border-radius: var(--helm-radius-pill);
+			background: var(--helm-primary-container);
+			color: var(--helm-on-primary);
+			font-family: var(--helm-font-display);
+			font-size: 18px;
+			font-weight: 600;
+			letter-spacing: 0.01em;
+			cursor: pointer;
+			box-shadow: var(--helm-shadow-hero);
+			transition: transform 120ms ease, box-shadow 200ms ease, background 160ms ease;
+		}
+
+		.tracky-mouse-start-stop-button:hover {
+			background: var(--helm-primary);
+		}
+
+		.tracky-mouse-start-stop-button:active {
+			transform: scale(0.97);
+		}
+
+		.tracky-mouse-start-stop-button[aria-pressed="true"] {
+			background: var(--helm-error);
+		}
+
+		.tracky-mouse-start-stop-button::after {
+			content: none !important;
+		}
+
+		.tracky-mouse-controls {
+			display: flex;
+			flex-direction: column;
+		}
+
+		/* Status pill (real DOM element, injected after the hero button) */
+		.helm-status-pill {
+			display: inline-flex;
+			align-self: center;
+			align-items: center;
+			gap: 6px;
+			padding: 4px 12px;
+			margin: 0 auto 18px;
+			background: color-mix(in srgb, var(--helm-secondary-container) 50%, transparent);
+			border: 1px solid var(--helm-outline-variant);
+			border-radius: var(--helm-radius-pill);
+			color: var(--helm-on-secondary-container);
+			font-size: 10px;
+			font-weight: 600;
+			letter-spacing: 0.12em;
+			width: fit-content;
+		}
+
+		.helm-status-pill::before {
+			content: "";
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background: var(--helm-primary);
+			animation: helm-pulse 1.6s ease-in-out infinite;
+		}
+
+		.helm-status-pill[data-state="tracking"]::before {
+			background: #2ecc71;
+		}
+
+		.helm-status-pill[data-state="error"]::before {
+			background: var(--helm-error);
+		}
+
+		@keyframes helm-pulse {
+			0%, 100% {
+				opacity: 0.6;
+			}
+			50% {
+				opacity: 1;
+			}
+		}
+
+		/* Section row layout */
+		.tracky-mouse-control-row:not([hidden]) {
+			display: flex !important;
+			align-items: center;
+			justify-content: space-between;
+			width: 100% !important;
+			box-sizing: border-box;
+			min-height: 44px;
+			padding: 10px 14px !important;
+			margin: 0 0 6px 0 !important;
+			background: var(--helm-surface);
+			border: 1px solid var(--helm-outline-variant);
+		}
+
+		.tracky-mouse-control-row + .tracky-mouse-control-row {
+			border-top: none;
+		}
+
+		/* Group rounding — first/last in a visual section.
+		   TrackyMouse injects <br> between rows; we'll round all and let the look stay consistent. */
+		.tracky-mouse-control-row {
+			border-radius: var(--helm-radius);
+			margin-bottom: 6px !important;
+		}
+
+		.tracky-mouse-ui br {
+			display: none;
+		}
+
+		.tracky-mouse-ui .tracky-mouse-label-text {
+			font-size: 13px;
+			font-weight: 500;
+			color: var(--helm-on-surface);
+		}
+
+		/* Sliders */
+		.tracky-mouse-ui .tracky-mouse-labeled-slider {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			flex: 1;
+			max-width: 60%;
+			margin-left: 12px;
+		}
+
+		.tracky-mouse-ui .tracky-mouse-labeled-slider input[type="range"] {
+			-webkit-appearance: none;
+			appearance: none;
+			flex: 1;
+			height: 4px;
+			background: var(--helm-surface-variant);
+			border-radius: 2px;
+			outline: none;
+			margin: 0;
+		}
+
+		.tracky-mouse-ui .tracky-mouse-labeled-slider input[type="range"]::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			appearance: none;
+			width: 22px;
+			height: 22px;
+			border-radius: 50%;
+			background: var(--helm-primary);
+			border: 2px solid var(--helm-surface);
+			cursor: pointer;
+			box-shadow: 0 2px 6px rgba(0, 100, 116, 0.35);
+		}
+
+		.tracky-mouse-ui .tracky-mouse-labeled-slider input[type="range"]::-moz-range-thumb {
+			width: 22px;
+			height: 22px;
+			border-radius: 50%;
+			background: var(--helm-primary);
+			border: 2px solid var(--helm-surface);
+			cursor: pointer;
+		}
+
+		.tracky-mouse-ui .tracky-mouse-min-label,
+		.tracky-mouse-ui .tracky-mouse-max-label {
+			font-size: 10px;
+			font-weight: 500;
+			color: var(--helm-outline);
+			letter-spacing: 0.02em;
+			text-transform: uppercase;
+		}
+
+		/* Checkboxes as toggle switches */
+		.tracky-mouse-control-row input[type="checkbox"] {
+			-webkit-appearance: none;
+			appearance: none;
+			width: 48px;
+			height: 28px;
+			background: var(--helm-surface-variant);
+			border-radius: 14px;
+			position: relative;
+			cursor: pointer;
+			transition: background 180ms ease;
+			margin: 0;
+			flex-shrink: 0;
+			order: 2;
+		}
+
+		.tracky-mouse-control-row input[type="checkbox"]::after {
+			content: "";
+			position: absolute;
+			top: 3px;
+			left: 3px;
+			width: 22px;
+			height: 22px;
+			background: #ffffff;
+			border-radius: 50%;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+			transition: transform 180ms ease;
+		}
+
+		.tracky-mouse-control-row input[type="checkbox"]:checked {
+			background: var(--helm-primary);
+		}
+
+		.tracky-mouse-control-row input[type="checkbox"]:checked::after {
+			transform: translateX(20px);
+		}
+
+		.tracky-mouse-control-row label {
+			cursor: pointer;
+			flex: 1;
+			margin-right: 12px;
+			order: 1;
+		}
+
+		/* Camera card — only re-skin the OUTER container.
+		   Leave `.tracky-mouse-canvas-container` and `.tracky-mouse-canvas` to the
+		   core's sizing logic, which uses inline `aspect-ratio` set from the live
+		   camera's resolution. Overriding the inner container caused the canvas
+		   to render at a broken aspect ratio, which degrades the
+		   getBoundingClientRect-based click-to-add-point flow in clmtrackr. */
+		.tracky-mouse-canvas-container-container {
+			background: var(--helm-surface) !important;
+			border: 1px solid var(--helm-outline-variant);
+			border-radius: var(--helm-radius-lg);
+			padding: 12px !important;
+			margin: 0 !important;
+			box-shadow: var(--helm-shadow-card);
+			min-height: 240px;
+			min-width: 0;
+			width: 100%;
+			height: 100%;
+			display: flex !important;
+			flex-direction: column !important;
+			align-items: stretch;
+			justify-content: center;
+			gap: 10px;
+			box-sizing: border-box;
+			overflow: hidden;
+		}
+
+		/* Just give the inner container a soft tinted backdrop and round corners.
+		   Do NOT override sizing — core sets aspect-ratio inline. */
+		.tracky-mouse-canvas-container {
+			border-radius: var(--helm-radius);
+			overflow: hidden;
+			background: var(--helm-surface-low);
+		}
+
+		/* Round the canvas itself but keep the core's sizing. */
+		.tracky-mouse-canvas {
+			border-radius: var(--helm-radius);
+		}
+
+		.tracky-mouse-canvas-overlay .tracky-mouse-use-camera-button,
+		.tracky-mouse-canvas-overlay .tracky-mouse-use-demo-footage-button {
+			padding: 10px 18px;
+			border-radius: var(--helm-radius-pill);
+			border: none;
+			background: var(--helm-primary-container);
+			color: var(--helm-on-primary);
+			font-family: var(--helm-font-body);
+			font-size: 13px;
+			font-weight: 600;
+			cursor: pointer;
+			box-shadow: var(--helm-shadow-card);
+		}
+
+		.tracky-mouse-canvas-overlay .tracky-mouse-error-message {
+			background: color-mix(in srgb, var(--helm-error) 12%, transparent);
+			color: var(--helm-error);
+			padding: 8px 12px;
+			border-radius: var(--helm-radius-sm);
+			font-size: 12px;
+			margin-top: 8px;
+		}
+
+		.tracky-mouse-desktop-app-download-message {
+			display: none;
+		}
+
+		.tracky-mouse-ui a:link,
+		.tracky-mouse-ui a:visited {
+			color: var(--helm-primary-container);
+		}
+
+		/* Section dividers — synthesize labels via the existing structure.
+		   Add a thin divider before specific known rows by their position. */
+
+		/* Footer */
+		.helm-footer {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 10px 20px;
+			background: var(--helm-surface-low);
+			border-top: 1px solid var(--helm-outline-variant);
+			font-size: 11px;
+			color: var(--helm-on-surface-variant);
+		}
+
+		.helm-footer kbd {
+			display: inline-block;
+			min-width: 22px;
+			padding: 1px 6px;
+			background: var(--helm-surface-high);
+			border: 1px solid var(--helm-outline-variant);
+			border-radius: 4px;
+			font-family: inherit;
+			font-size: 10px;
+			font-weight: 700;
+			color: var(--helm-on-surface);
+			text-align: center;
+		}
+
+		.helm-footer a {
+			color: var(--helm-primary-container);
+			text-decoration: none;
+			margin-left: 16px;
+		}
+
+		.helm-footer a:hover {
+			text-decoration: underline;
+		}
+
+		/* Compact layout when window is short */
+		@media screen and (max-height: 500px) {
+			.tracky-mouse-controls {
+				display: none;
+			}
+
+			.helm-footer {
+				display: none;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header class="helm-header">
+		<div class="helm-logo" aria-hidden="true">
+			<svg viewBox="0 0 24 24" fill="currentColor">
+				<path d="M12 2 L20 18 L12 14 L4 18 Z" />
+			</svg>
+		</div>
+		<div>
+			<h1 class="helm-title">Helm</h1>
+			<p class="helm-subtitle">Steer your cursor.</p>
+		</div>
+	</header>
+
+	<main class="helm-main" id="helm-main"></main>
+
+	<footer class="helm-footer">
+		<span>Press <kbd>F9</kbd> anytime to toggle tracking</span>
+		<span>
+			<a href="https://trackymouse.js.org" target="_blank" rel="noreferrer">About Helm</a>
+		</span>
+	</footer>
+
+	<script src="../../core/tracky-mouse.js"></script>
+	<script>
+		TrackyMouse.dependenciesRoot = "../../core";
+		TrackyMouse.init(document.getElementById("helm-main"));
+
+		// Helm: inject a live status pill below the hero button and wire it to the
+		// Start/Stop button's aria-pressed attribute so it reflects real tracking state.
+		(function injectHelmStatusPill() {
+			const startBtn = document.querySelector(".tracky-mouse-start-stop-button");
+			if (!startBtn) return;
+			const pill = document.createElement("div");
+			pill.className = "helm-status-pill";
+			pill.setAttribute("role", "status");
+			pill.setAttribute("aria-live", "polite");
+			pill.textContent = "READY";
+			startBtn.insertAdjacentElement("afterend", pill);
+
+			const updatePill = () => {
+				const tracking = startBtn.getAttribute("aria-pressed") === "true";
+				pill.dataset.state = tracking ? "tracking" : "ready";
+				pill.textContent = tracking ? "TRACKING" : "READY";
+				startBtn.textContent = tracking ? "Stop Tracking" : "Start Tracking";
+			};
+			updatePill();
+			new MutationObserver(updatePill).observe(startBtn, {
+				attributes: true,
+				attributeFilter: ["aria-pressed"],
+			});
+		})();
+	</script>
+</body>
+
+</html>
