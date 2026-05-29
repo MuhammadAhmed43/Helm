@@ -21,3 +21,4 @@
 - [0019] style: smooth animation easing curve
 - [0020] docs: enumerate click mode states
 - [0021] chore: review camera permission flow
+- [0022] docs: describe drag cancellation cases
