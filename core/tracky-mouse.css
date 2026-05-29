@@ -1,0 +1,304 @@
+.tracky-mouse-pointer {
+	z-index: 900000;
+	pointer-events: none;
+	border-radius: 50%;
+	background-color: #00d2ff;
+	width: 20px;
+	height: 20px;
+	position: fixed;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 10px #00d2ff;
+}
+
+.tracky-mouse-dwell-indicator {
+	position: fixed;
+	pointer-events: none;
+	z-index: 1000000;
+}
+
+.tracky-mouse-dwell-indicator::after {
+	content: "";
+	display: block;
+	position: absolute;
+	background: #00d2ff;
+	left: 2px;
+	top: 2px;
+	right: 2px;
+	bottom: 2px;
+}
+
+.tracky-mouse-dwell-indicator:not(.tracky-mouse-for-release) {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.tracky-mouse-dwell-indicator.tracky-mouse-for-release {
+	background: white;
+}
+
+.tracky-mouse-dwell-indicator:not(.tracky-mouse-for-release),
+.tracky-mouse-dwell-indicator:not(.tracky-mouse-for-release)::after {
+	border-radius: 50%;
+}
+
+.tracky-mouse-dwell-indicator.tracky-mouse-for-release,
+.tracky-mouse-dwell-indicator.tracky-mouse-for-release::after {
+	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.tracky-mouse-hover-halo {
+	pointer-events: none;
+	z-index: 1000000;
+	box-shadow: 0 0 10px #00efff, 0 0 3px #00efff;
+}
+
+.tracky-mouse-ui {
+	display: flex;
+	flex-direction: column;
+	background: rgba(225, 245, 250, 0.65);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	color: #0d3b45;
+	padding: 15px;
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	box-shadow: 0 8px 32px rgba(0, 100, 110, 0.1);
+	--max-ui-width: 600px;
+	max-width: var(--max-ui-width);
+	box-sizing: border-box;
+	font-size: 15px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	accent-color: #00d2ff;
+}
+
+.tracky-mouse-canvas {
+	max-width: 100%;
+	object-fit: scale-down;
+	background-color: rgba(0, 20, 25, 0.5);
+	border-radius: 8px;
+}
+
+.tracky-mouse-start-stop-button {
+	background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+	color: white;
+	font-size: 20px;
+	border: none;
+	border-radius: 8px;
+	padding: 8px 12px;
+	margin: 5px;
+	width: 120px;
+	cursor: pointer;
+	box-shadow: 0 4px 15px rgba(0, 210, 255, 0.3);
+	transition: all 0.2s ease;
+}
+
+.tracky-mouse-start-stop-button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(0, 210, 255, 0.4);
+	filter: brightness(1.1);
+}
+
+.tracky-mouse-start-stop-button::after {
+	content: "(" attr(aria-keyshortcuts) ")";
+	opacity: 0.7;
+	margin-left: 0.5em;
+	font-size: 0.8em;
+}
+
+.tracky-mouse-ui .tracky-mouse-control-row:not([hidden]) {
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.tracky-mouse-ui .tracky-mouse-control-row label {
+	width: fit-content;
+	display: flex;
+	align-items: center;
+}
+
+.tracky-mouse-ui .tracky-mouse-label-text {
+	display: inline-block;
+	min-width: 160px;
+	font-weight: 500;
+}
+
+.tracky-mouse-ui .tracky-mouse-labeled-slider {
+	display: inline-flex;
+	position: relative;
+	margin-bottom: 20px;
+	flex: 1;
+	max-width: 400px;
+}
+
+.tracky-mouse-ui .tracky-mouse-labeled-slider input {
+	flex: 1;
+}
+
+.tracky-mouse-ui .tracky-mouse-labeled-slider .tracky-mouse-min-label,
+.tracky-mouse-ui .tracky-mouse-labeled-slider .tracky-mouse-max-label {
+	opacity: 0.7;
+	position: absolute;
+	bottom: -10px;
+	pointer-events: none;
+	font-size: 0.8em;
+	color: #0d3b45;
+}
+
+.tracky-mouse-ui .tracky-mouse-labeled-slider .tracky-mouse-min-label {
+	left: 0;
+}
+
+.tracky-mouse-ui .tracky-mouse-labeled-slider .tracky-mouse-max-label {
+	right: 0;
+}
+
+.tracky-mouse-canvas-container-container {
+	flex: 1;
+	flex-basis: 0;
+	min-width: 0;
+	min-height: var(--tracky-mouse-camera-view-min-height, 300px);
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 10px;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+.tracky-mouse-canvas-container {
+	position: relative;
+	max-height: 100%;
+	margin: auto;
+}
+
+.tracky-mouse-canvas-overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.tracky-mouse-use-camera-button {
+	font-size: min(2em, 8vw);
+	color: white;
+	background: linear-gradient(135deg, #00C9FF 0%, #92FE9D 100%);
+	border: 0;
+	border-radius: 12px;
+	padding: 15px 30px;
+	cursor: pointer;
+	box-shadow: 0 8px 20px rgba(0, 200, 255, 0.3);
+	transition: all 0.3s ease;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.tracky-mouse-use-camera-button:hover {
+	transform: translateY(-3px) scale(1.02);
+	box-shadow: 0 12px 25px rgba(0, 200, 255, 0.4);
+}
+
+.tracky-mouse-error-message {
+	font-size: min(1.5em, 6vw);
+	text-align: center;
+	color: #0d3b45;
+	background: rgba(255, 200, 200, 0.8);
+	border-radius: 8px;
+	padding: 10px;
+	backdrop-filter: blur(4px);
+}
+
+/* Screen overlay in electron app */
+
+#tracky-mouse-screen-overlay-message {
+	color: #00efff;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	padding: 0 5px;
+	white-space: nowrap;
+	--overlay-background-color: rgba(10, 30, 40, 0.6);
+	--height: 25px;
+	height: var(--height);
+	line-height: var(--height);
+	background-color: var(--overlay-background-color);
+	backdrop-filter: blur(5px);
+	text-shadow: 0 0 5px rgba(0, 239, 255, 0.5);
+	font-size: calc(var(--height) * 0.8);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	border-radius: 5px 5px 0 0;
+}
+
+/* triangles */
+#tracky-mouse-screen-overlay-message::before,
+#tracky-mouse-screen-overlay-message::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+}
+
+#tracky-mouse-screen-overlay-message::before {
+	border-width: 0 0 var(--height) var(--height);
+	border-color: transparent transparent var(--overlay-background-color) transparent;
+	left: calc(var(--height) * -1);
+}
+
+#tracky-mouse-screen-overlay-message::after {
+	border-width: var(--height) 0 0 var(--height);
+	border-color: transparent transparent transparent var(--overlay-background-color);
+	right: calc(var(--height) * -1);
+}
+
+@keyframes tracky-mouse-screen-overlay-message-fade-out {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.tracky-mouse-absolute-center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* prefer manual takeback indicator, rather than showing both at once */
+body.tracky-mouse-manual-takeback .tracky-mouse-head-not-found-indicator,
+body:not(.tracky-mouse-head-not-found) .tracky-mouse-head-not-found-indicator {
+	display: none;
+}
+
+body:not(.tracky-mouse-manual-takeback) .tracky-mouse-manual-takeback-indicator {
+	display: none;
+}
+
+.tracky-mouse-manual-takeback .tracky-mouse-no-takeback-indicator {
+	display: none;
+}
+
+.tracky-mouse-screen-overlay-status-indicator img {
+	filter: drop-shadow(0 0 4px #00d2ff) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+	opacity: 0.8;
+}
+
+.tracky-mouse-ui a:link,
+.tracky-mouse-ui a:visited {
+	color: #008cb3;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.tracky-mouse-ui a:hover {
+	text-decoration: underline;
+	color: #00d2ff;
+}
