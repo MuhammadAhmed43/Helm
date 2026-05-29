@@ -242,3 +242,4 @@
 - [0240] chore: revisit sidebar dimension
 - [0241] style: smooth animation easing curve
 - [0242] docs: enumerate click mode states
+- [0243] chore: review camera permission flow
